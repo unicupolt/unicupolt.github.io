@@ -1,27 +1,7 @@
-/* multilink code
-<a id="mapLink" href="#">Open in Maps</a>
-
-<script>
-  const mapLink = document.getElementById('mapLink');
-
-  if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-    mapLink.href = "maps://?q=Oldsmar%2C%20FL";
-  } else {
-    mapLink.href = "https://www.google.com/maps/search/?api=1&query=Oldsmar%2C%20FL";
-  }
-</script>
-*/
-
-/*color palette
-blue #233041
-beige #EAD6BF
-red #E3483A
-gray #8C949B
-*/
 
 h1 {
     color: white;
-    font-size: 10vh;
+    font-size: 10lvh;
     max-width: 50%;
     text-align:center;
     margin: 0 auto;
@@ -31,21 +11,21 @@ h1 {
     padding-bottom: 10px;
 }
 h2 {
-    font-size: 6vh;
+    font-size: 6lvh;
     margin-bottom: -10px;
 }
 h3 {
-    font-size: 5vh;
+    font-size: 5lvh;
     margin-bottom: -15px;
 }
 h4 {
-    font-size: 3vh;
+    font-size: 3lvh;
 }
 p {
     padding-left: 1vw;
     padding-right: 1vw;
     align-self: center;
-    font-size: 3vh;
+    font-size: 3lvh;
 }
 h1, h2, h3, h4 {
     text-align: center;
@@ -157,5 +137,5 @@ button {
     border-style: solid;
     border-width: 10px;
     border-color: #E3483A;
-    font-size: 3vh;
+    font-size: 3lvh;
 }
