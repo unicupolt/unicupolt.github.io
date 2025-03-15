@@ -1,7 +1,14 @@
 
+/*color palette
+blue #233041
+beige #EAD6BF
+red #E3483A
+gray #8C949B
+*/
+
 h1 {
     color: white;
-    font-size: 10lvh;
+    font-size: 10vh;
     max-width: 50%;
     text-align:center;
     margin: 0 auto;
@@ -11,21 +18,21 @@ h1 {
     padding-bottom: 10px;
 }
 h2 {
-    font-size: 6lvh;
+    font-size: 6vh;
     margin-bottom: -10px;
 }
 h3 {
-    font-size: 5lvh;
+    font-size: 5vh;
     margin-bottom: -15px;
 }
 h4 {
-    font-size: 3lvh;
+    font-size: 3vh;
 }
 p {
     padding-left: 1vw;
     padding-right: 1vw;
     align-self: center;
-    font-size: 3lvh;
+    font-size: 3vh;
 }
 h1, h2, h3, h4 {
     text-align: center;
@@ -137,5 +144,5 @@ button {
     border-style: solid;
     border-width: 10px;
     border-color: #E3483A;
-    font-size: 3lvh;
+    font-size: 3vh;
 }
