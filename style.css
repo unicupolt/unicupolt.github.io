@@ -1,3 +1,4 @@
+
 /*color palette
 blue #233041
 beige #EAD6BF
@@ -7,7 +8,7 @@ gray #8C949B
 
 h1 {
     color: white;
-    font-size: 10vh;
+    font-size: 8lvh;
     max-width: 50%;
     text-align:center;
     margin: 0 auto;
@@ -17,21 +18,21 @@ h1 {
     padding-bottom: 10px;
 }
 h2 {
-    font-size: 5dvh;
+    font-size: 5lvh;
     margin-bottom: -10px;
 }
 h3 {
-    font-size: 4vh;
+    font-size: 4lvh;
     margin-bottom: -15px;
 }
 h4 {
-    font-size: 2vh;
+    font-size: 2.5lvh;
 }
 p {
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 1lvw;
+    padding-right: 1lvw;
     align-self: center;
-    font-size: 2.5vh;
+    font-size: 2.5lvh;
 }
 h1, h2, h3, h4 {
     text-align: center;
@@ -51,13 +52,14 @@ img {
 .left_image {
     position: absolute;
     padding-left: 10px;
+    margin-top: -2.3lvw;
     width: 15%;
     height: auto;
 }
 .right_image {
     position: absolute;
     padding-right: 10px;
-    margin-top: -2.3dvw;
+    margin-top: -4.7lvw;
     right: 10px;
     width: 15%;
     height: auto;
@@ -70,9 +72,9 @@ section:first-of-type {
 section {
     display: block;
     background-color: #EAD6BF;
-    margin: 10lvw;
+    margin: 5lvw;
     margin-bottom: 75px;
-    padding: 20px;
+    padding: 15px;
     border-style: solid;
     border-width: 10px;
     border-color: #E3483A;
@@ -81,7 +83,7 @@ section {
 section img {
     display: flex;
     margin: auto;
-    width: 30vw;
+    width: 30lvw;
     height: auto;
     border-style: none;
     margin-top: -20px;
@@ -90,12 +92,27 @@ section img {
 .map {
     display: flex;
     margin: auto;
+    margin-left: -2px;
     width: 100%;
     height: auto;
     border-style: solid;
     border-color: #8C949B;
     border-width: 3px;
+
 }
+/*
+.challenge {
+    display: flex;
+    position: right;
+}
+.sticky_image {
+    display: flex;
+    position: sticky;
+    flex: left;
+    top: 0;
+    left: 0;
+}
+    */
 body {
    font-family: sans-serif;
    background-color: #233041;
@@ -118,8 +135,9 @@ a {
     top: 10px;
     padding-left: 0vw;
     padding-top: 0px;
-    width: 10vw;
+    width: 10lvw;
     height: auto;
+    background-color: none;
 }
 
 a:link, a:visited {
@@ -143,5 +161,5 @@ button {
     border-style: solid;
     border-width: 10px;
     border-color: #E3483A;
-    font-size: 3vh;
+    font-size: 3lvh;
 }
