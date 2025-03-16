@@ -33,9 +33,7 @@ h1 {
 .second_h1 {
     color: white;
     font-size: 8lvh;
-    max-width: 60%;
-    text-align: center;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     margin: none;
