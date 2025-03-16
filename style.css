@@ -1,4 +1,3 @@
-
 /*color palette
 blue #233041
 beige #EAD6BF
@@ -6,49 +5,85 @@ red #E3483A
 gray #8C949B
 */
 
+header {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: auto;
+    text-align: center;
+  }
+
+header a {
+    font-size: 5lvh;
+    text-align: center;
+  }
+header a + a {
+    margin-left: 20px;
+}
 h1 {
     color: white;
     font-size: 8lvh;
-    max-width: 50%;
-    text-align:center;
+    max-width: 60%;
+    text-align: center;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
     margin: none;
     padding-bottom: 10px;
 }
+.second_h1 {
+    color: white;
+    font-size: 8lvh;
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: none;
+    padding-bottom: 10px;    
+}
+
 h2 {
     font-size: 5lvh;
     margin-bottom: -10px;
 }
+
 h3 {
     font-size: 4lvh;
     margin-bottom: -15px;
 }
+
 h4 {
     font-size: 2.5lvh;
 }
+
 p {
     padding-left: 1lvw;
     padding-right: 1lvw;
     align-self: center;
+    margin: auto;
+    margin-top: 10px;
     font-size: 2.5lvh;
+    max-width: 700px;
 }
+
 h1, h2, h3, h4 {
     text-align: center;
 }
+
 img {
     display: block;
     margin: auto;
     width: 50%;
     height: auto;
 }
+
 .logo {
     width: 90%;
     border-style: solid;
     border-width: 10px;
     border-color: #8C949B;
 }
+
 .left_image {
     position: absolute;
     padding-left: 10px;
@@ -56,6 +91,7 @@ img {
     width: 15%;
     height: auto;
 }
+
 .right_image {
     position: absolute;
     padding-right: 10px;
@@ -64,6 +100,7 @@ img {
     width: 15%;
     height: auto;
 }
+
 section:first-of-type {
     margin-top: 30px;
 }
@@ -79,7 +116,7 @@ section {
     border-width: 10px;
     border-color: #E3483A;
 }
-    
+
 section img {
     display: flex;
     margin: auto;
@@ -88,18 +125,25 @@ section img {
     border-style: none;
     margin-top: -20px;
     margin-bottom: -20px;
-  }
+}
+
 .map {
     display: flex;
-    margin: auto;
-    margin-left: -2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: auto;
     border-style: solid;
     border-color: #8C949B;
     border-width: 3px;
+    max-width: 600px;
 
 }
+
 /*
 .challenge {
     display: flex;
@@ -114,15 +158,16 @@ section img {
 }
     */
 body {
-   font-family: sans-serif;
-   background-color: #233041;
-   margin: auto;
+    font-family: sans-serif;
+    background-color: #233041;
+    margin: auto;
 }
 
 a {
     text-align: center;
     content: center;
 }
+
 .bold {
     font-weight: bold;
 }
@@ -140,18 +185,47 @@ a {
     background-color: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #E3483A
 }
+
 .separator {
     margin-top: 100px;
     border-bottom: dotted;
     border-color: #8C949B;
     border-width: 10px;
 }
+
 .pay {
     font-style: italic;
 }
+figure {
+    display: block;
+    background-color: #EAD6BF;
+    margin: 5lvw;
+    margin-bottom: 75px;
+    padding: 15px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #E3483A;
+}
+
+figcaption {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+figcaption a {
+    font-size: 3lvh;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
 button {
     display: block;
     background-color: #EAD6BF;

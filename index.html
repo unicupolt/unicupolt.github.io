@@ -9,12 +9,25 @@
 </head>
 
 <body>
+
+
     <img src="Florida.Flag.png" alt="Florida's state flag" class="left_image" height="534" width="800">
     <img src="Greek.Flag.png" alt="the flag of the country of Greece" class="right_image" height="512" width="512"></h1>
+
+
     <h1>Jet Lag: Tarpon Springs</h1>
+
+    <header>
+        <a href="#challenges">Challenges</a>
+        <a href="#game_board">Game Board</a>
+    </header>
+
     <img src="Jet.Lag.Tarpon.Springs.Logo.png" class="logo" alt="A banner containing the title Jet Lag: Tarpon Springs"
         height="617" width="1099">
-    <div class="separator"> </div>
+
+
+    <div class="separator" id="challenges"> </div>
+    <h2 class="second_h1">Challenges</h2>
 
     <div class="content">
         <!--
@@ -26,7 +39,7 @@
     -->
 
     <div class="challenge">
-        <section>
+        <section id="challenge1">
             <h2>Challenge 1: Watch the Tarpon Spring</h2>
             <h3>40 points</h3>
             <h4>(video)</h4>
@@ -41,18 +54,31 @@
         </section>
         </div>
 
-        <section>
+        <section id="challenge2">
             <h2>Challenge 2: Shop Like a Local</h2>
             <h3>10 points</h3>
             <h4>(receipt)</h4>
-            <img src="Publix.png" alt="a map depicting the location of the nearest Publix" class="map" height="829" width="644">
+            
+
+            <a id="mapLink_Publix" href="#" target="_blank"><img src="Publix.png" alt="a map depicting the location of the nearest Publix" class="map" height="829" width="644"></a>
+
+        <script>
+            const mapLink_Publix = document.getElementById('mapLink_Publix');
+
+            if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+                mapLink_Publix.href = "maps:place?q=Publix&ll=28.1437767%2C-82.7428174&auid=12955043015264247821&lsp=9902&address=40932%20US%20Hwy%2019%20N%2C%20Tarpon%20Springs%2C%20FL%2034689%2C%20United%20States";
+            } else {
+                mapLink_Publix.href = "https://www.google.com/maps/place/Publix+Super+Market+at+Tarpon+Mall/@28.1437767,-82.7428174,17z/data=!3m1!4b1!4m6!3m5!1s0x88c28d7be97da1bf:0xc2510ef891f3b733!8m2!3d28.1437767!4d-82.7428174!16s%2Fg%2F1tfk9t83?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D1";
+            }
+        </script>
+
             <p>Go to any Publix and acquire a Publix Bakery item priced at exactly $3.99. Every team member must go
                 inside
                 the
                 store.
             </p>
         </section>
-        <section>
+        <section id="challenge3">
             <h2>Challenge 3: Dig a Lucky Hole at Sunset Beach</h2>
             <h3>30 points</h3>
             <h4>(picture)</h4>
@@ -76,14 +102,14 @@
         </section>
         <div class="challenge">
 
-        <section>
+        <section id="challenge4">
             <h2>Challenge 4: Return a Sea Sponge</h2>
             <h3>20 points</h3>
             <h4>(picture or video)</h4>
             <h4 class="pay">$ Pay for parking! $</h4>
 
             <a id="mapLink_Sponge_Docks" href="#" target="_blank"><img src="Sponge.Docks.png"
-                alt="a map distinguishing the location of the Sponge Docks" height="326" width="1040" class="map"/></a>
+                alt="a map distinguishing the location of the Sponge Docks" height="833" width="643" class="map"/></a>
 
         <script>
             const mapLink_Sponge_Docks = document.getElementById('mapLink_Sponge_Docks');
@@ -105,13 +131,13 @@
             </p>
         </section>
         </div>
-        <section>
+        <section id="challenge5">
             <h2>Challenge 5: Celebrate Epiphany at Spring Bayou</h2>
             <h3>20 points</h3>
             <h4>(picture)</h4>
 
             <a id="mapLink_Craig_Park" href="#" target="_blank"><img src="Craig.Park.png"
-                alt="a map distinguishing the location of the Craig Park" height="322" width="1036" class="map" /></a>
+                alt="a map distinguishing the location of the Craig Park" height="838" width="640" class="map" /></a>
 
         <script>
             const mapLink_Craig_Park = document.getElementById('mapLink_Craig_Park');
@@ -133,16 +159,24 @@
                 and construct a cross of at least 1 ft. x 2 ft. from sticks, rocks, and/or leaves.
             </p>
         </section>
-        <section>
+        <section id="challenge6">
             <h2>Challenge 6: Clean Up Howard Park Beach</h2>
             <h3>50 points</h3>
             <h4>(pictures)</h4>
-            <h4 class="pay">$ Pay for parking with the <a href="https://apps.apple.com/us/app/parkmobile-park-pay-go/id365399299"
-                    target="_blank">Apple
-                    App</a> or <a
-                    href="https://play.google.com/store/apps/details?id=net.sharewire.parkmobilev2&hl=en_US&pli=1"
-                    target="_blank">
-                    Google App</a>! $</h4>
+            <h4 class="pay">$ Pay for parking with the
+
+                        <a id="Parking_App" href="#" target="_blank">app</a>! $</h4>
+        
+                        <script>
+                            const Parking_App = document.getElementById('Parking_App');
+                
+                            if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+                                Parking_App.href = "https://apps.apple.com/us/app/parkmobile-park-pay-go/id365399299";
+                            } else {
+                                Parking_App.href = "https://play.google.com/store/apps/details?id=net.sharewire.parkmobilev2&hl=en_US&pli=1";
+                            }
+                        </script>
+    
 
                     <a id="mapLink_Howard_Park_Beach" href="#" target="_blank"><img src="Howard.Park.Beach.png"
                         alt="a map distinguishing the location of the Howard Park Beach" height="834" width="642" class="map" /></a>
@@ -165,14 +199,14 @@
                 and throw them away.
             </p>
         </section>
-        <section>
+        <section id="challenge7">
             <h2>Challenge 7: Celebrate the Greek Revolution</h2>
             <h3>40 points</h3>
             <h4>(pictures)</h4>
             <h4 class="pay">$ Pay for parking! $</h4>
 
             <a id="mapLink_March" href="#" target="_blank"><img src="March.png"
-                alt="a map distinguishing the locations of the start and finish of the march" height="399" width="1285" class="map" /></a>
+                alt="a map distinguishing the locations of the start and finish of the march" height="839" width="641" class="map" /></a>
 
         <script>
             const mapLink_March = document.getElementById('mapLink_March');
@@ -189,7 +223,7 @@
                 Tarpon Springs celebrates Greek Independence Day with a parade. Find and buy a miniature Greek flag and
                 hold
                 it
-                while marching from Alt 19 to the Sponge Docks trading center.
+                while marching from Alt 19 (Pinellas Ave) to the Sponge Docks trading center along Dodecanese Blvd.
             </p>
 
             <p class="bold">Map link takes you to the start of the march. Click 
@@ -209,6 +243,32 @@
 
         </section>
 
+        <div class="separator" id="game_board"> </div>
+        <h2 class = second_h1>Game Board</h2>
+
+        <figure>
+        <img src="Game.Board.png" alt="a map depicting every location and its corresponding challenge" class="map" height="812" width="625">
+        <figcaption>
+            <a href="#challenge1">Challenge 1</a> |
+            <a href="#challenge2">Challenge 2</a> |
+            <a href="#challenge3">Challenge 3</a> |
+            <a href="#challenge4">Challenge 4</a> |
+            <a href="#challenge5">Challenge 5</a> |
+            <a href="#challenge6">Challenge 6</a> |
+            <a href="#challenge7">Challenge 7</a> |
+            <a href="#challenge7"><a id="mapLink_Home_Base" href="#" target="_blank">Home Base</a>
+
+        <script>
+            const mapLink_Home_Base = document.getElementById('mapLink_Home_Base');
+
+            if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+                mapLink_Home_Base.href = "maps:place?q=24%20Freshwater%20Dr&ll=28.110774%2C-82.733783&address=24%20Freshwater%20Dr%2C%20Palm%20Harbor%2C%20FL%20%2034684%2C%20United%20States";
+            } else {
+                mapLink_Home_Base.href = "https://www.google.com/maps/place/24+Freshwater+Dr,+Palm+Harbor,+FL+34684/@28.1107738,-82.7338129,17z/data=!3m1!4b1!4m6!3m5!1s0x88c292aa6f3e321b:0x31a2622ed6db0eb0!8m2!3d28.1107738!4d-82.7338129!16s%2Fg%2F11c1y30p88?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D";
+            }
+        </script></a>
+        </figcaption>
+        </figure>
 
 
         <button id="myButton"><a href="#top">Click here to go back to the top!</a></button>
