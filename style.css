@@ -13,46 +13,45 @@ header {
   }
 
 header a {
-    font-size: 5lvh;
+    font-size: 1rem;
     text-align: center;
   }
 header a + a {
     margin-left: 20px;
 }
 h1 {
-    color: white;
-    font-size: 8lvh;
+    color: whitesmoke;
+    font-size: 2.5rem;
     max-width: 60%;
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin: none;
     padding-bottom: 10px;
 }
 .second_h1 {
     display: block;
-    color: white;
-    font-size: 8lvh;
+    color: whitesmoke;
+    font-size: 2rem;
     margin: auto;
+    text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin: none;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;  
 }
 
 h2 {
-    font-size: 5lvh;
-    margin-bottom: -10px;
+    font-size: 1.5rem;
 }
 
 h3 {
-    font-size: 4lvh;
-    margin-bottom: -15px;
+    font-size: 1rem;
+    line-height: 0.6;
 }
 
 h4 {
-    font-size: 2.5lvh;
+    font-size: 0.8rem;
+    line-height: 0.6;
 }
 
 p {
@@ -61,7 +60,7 @@ p {
     align-self: center;
     margin: auto;
     margin-top: 10px;
-    font-size: 2.5lvh;
+    font-size: 1rem;
     max-width: 700px;
 }
 
@@ -81,11 +80,13 @@ img {
     border-style: solid;
     border-width: 10px;
     border-color: #8C949B;
+    border-radius: 4px;
 }
 
 .left_image {
     position: absolute;
     padding-left: 10px;
+    left: 5px;
     margin-top: -2.3lvw;
     width: 15%;
     height: auto;
@@ -95,10 +96,30 @@ img {
     position: absolute;
     padding-right: 10px;
     margin-top: -4.7lvw;
-    right: 10px;
+    right: 5px;
     width: 15%;
     height: auto;
 }
+/*
+@media (orientation: portrait) {
+    .right_image {
+        position: absolute;
+        padding-right: 10px;
+        margin-top: 6vw;
+        right: 10px;
+        width: 20%;
+        height: auto;
+    }
+    .left_image {
+        position: absolute;
+        padding-left: 10px;
+        margin-top: 7.6vw;
+        width: 20%;
+        height: auto;
+    }
+}
+    */
+
 
 section:first-of-type {
     margin-top: 30px;
@@ -114,6 +135,7 @@ section {
     border-style: solid;
     border-width: 10px;
     border-color: #E3483A;
+    border-radius: 4px;
 }
 
 section img {
@@ -139,9 +161,22 @@ section img {
     border-style: solid;
     border-color: #8C949B;
     border-width: 3px;
-    max-width: 600px;
-
 }
+@media (orientation: landscape) and (min-width: 660px) {
+    .map {
+        max-width: 60lvw;
+    }
+    section img {
+        max-width: 20lvw;
+    }
+}
+@media (orientation: landscape)  {
+    .map {
+        max-height: 90lvh;
+        width: auto;
+    }
+}
+
 
 /*
 .challenge {
@@ -208,6 +243,7 @@ figure {
     border-style: solid;
     border-width: 10px;
     border-color: #E3483A;
+    border-radius: 4px;
 }
 
 figcaption {
@@ -215,10 +251,12 @@ figcaption {
     padding-bottom: 20px;
     margin: auto;
     text-align: center;
+    font-size: 1rem;
+    text-align: center;
 }
 
 figcaption a {
-    font-size: 3lvh;
+    font-size: 1rem;
     text-align: center;
     display: inline-block;
 }
@@ -227,12 +265,13 @@ figcaption a {
 
 button {
     display: block;
+    padding: 20px;
+    border-radius: 4px;
     background-color: #EAD6BF;
     margin: auto;
     margin-bottom: 75px;
-    padding: 20px;
     border-style: solid;
     border-width: 10px;
     border-color: #E3483A;
-    font-size: 3lvh;
+    font-size: 1rem;
 }
