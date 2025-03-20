@@ -5,6 +5,12 @@ red #E3483A
 gray #8C949B
 */
 
+.heading {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
 header {
     padding-top: 20px;
     padding-bottom: 50px;
@@ -13,21 +19,24 @@ header {
   }
 
 header a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 header a + a {
     margin-left: 20px;
 }
 h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: whitesmoke;
     font-size: 2.5rem;
-    max-width: 60%;
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-bottom: 10px;
+    padding: 0 10px 10px 10px;
+    box-sizing: content-box;
 }
 .second_h1 {
     display: block;
@@ -83,23 +92,21 @@ img {
     border-radius: 4px;
 }
 
+
 .left_image {
-    position: absolute;
-    padding-left: 10px;
+    padding-left: 20px;
     left: 5px;
-    margin-top: -2.3lvw;
-    width: 15%;
+    width: 80%;
     height: auto;
 }
 
 .right_image {
-    position: absolute;
-    padding-right: 10px;
-    margin-top: -4.7lvw;
+    padding-right: 20px;
     right: 5px;
-    width: 15%;
+    width: 80%;
     height: auto;
 }
+    */
 /*
 @media (orientation: portrait) {
     .right_image {
@@ -119,7 +126,9 @@ img {
     }
 }
     */
-
+.content {
+    text-align: center;
+}
 
 section:first-of-type {
     margin-top: 30px;
@@ -128,6 +137,7 @@ section:first-of-type {
 
 section {
     display: block;
+    position: relative;
     background-color: #EAD6BF;
     margin: 5lvw;
     margin-bottom: 75px;
@@ -136,7 +146,9 @@ section {
     border-width: 10px;
     border-color: #E3483A;
     border-radius: 4px;
+    box-sizing: border-box;
 }
+
 
 section img {
     display: flex;
@@ -147,9 +159,13 @@ section img {
     margin-top: -20px;
     margin-bottom: -20px;
 }
+a img {
+    display: block;
+    position: relative;
+}
 
 .map {
-    display: flex;
+    display: block;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
@@ -157,25 +173,18 @@ section img {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;
     border-style: solid;
     border-color: #8C949B;
     border-width: 3px;
 }
-@media (orientation: landscape) and (min-width: 660px) {
-    .map {
-        max-width: 60lvw;
-    }
-    section img {
-        max-width: 20lvw;
-    }
-}
-@media (orientation: landscape)  {
+
+@media (min-width: 620px) {
     .map {
         max-height: 90lvh;
         width: auto;
     }
 }
+    
 
 
 /*
